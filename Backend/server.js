@@ -15,16 +15,19 @@ app.use(express.json());
 
 app.use("/uploads", express.static("uploads"));
 
-console.log("✅ Loading Admin Routes...");
-app.use("/api/admin", adminRoutes);
+// ========================
+// HOME ROUTE
+// ========================
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Backend is running successfully 🚀",
+  });
+});
 
-console.log("✅ Loading Project Routes...");
-app.use("/api/project", projectRoutes);
-
-console.log("✅ Loading Message Routes...");
-app.use("/api/message", messageRoutes);
-
-// Debug Route
+// ========================
+// DEBUG ROUTE
+// ========================
 app.get("/api/test", (req, res) => {
   res.json({
     success: true,
@@ -32,12 +35,39 @@ app.get("/api/test", (req, res) => {
   });
 });
 
-// Home Route
-app.get("/", (req, res) => {
+// ========================
+// DIRECT ROUTE TESTS
+// ========================
+app.get("/api/admin", (req, res) => {
   res.json({
-    message: "Backend is running successfully 🚀",
+    success: true,
+    message: "Direct Admin Route Working ✅",
   });
 });
+
+app.get("/api/project", (req, res) => {
+  res.json({
+    success: true,
+    message: "Direct Project Route Working ✅",
+  });
+});
+
+app.get("/api/message", (req, res) => {
+  res.json({
+    success: true,
+    message: "Direct Message Route Working ✅",
+  });
+});
+
+// ========================
+// ORIGINAL ROUTERS
+// ========================
+
+// COMMENT THESE OUT FOR NOW
+
+// app.use("/api/admin", adminRoutes);
+// app.use("/api/project", projectRoutes);
+// app.use("/api/message", messageRoutes);
 
 const PORT = process.env.PORT || 5000;
 
