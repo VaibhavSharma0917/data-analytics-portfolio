@@ -100,3 +100,4 @@ export const uploadResume = async (req, res) => {
     });
   }
 };
+

@@ -10,19 +10,29 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Serve Uploaded Files
 app.use("/uploads", express.static("uploads"));
 
-// Routes
+console.log("✅ Loading Admin Routes...");
 app.use("/api/admin", adminRoutes);
+
+console.log("✅ Loading Project Routes...");
 app.use("/api/project", projectRoutes);
+
+console.log("✅ Loading Message Routes...");
 app.use("/api/message", messageRoutes);
 
-// Test Route
+// Debug Route
+app.get("/api/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "API Test Successful ✅",
+  });
+});
+
+// Home Route
 app.get("/", (req, res) => {
   res.json({
     message: "Backend is running successfully 🚀",
@@ -32,6 +42,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
-
