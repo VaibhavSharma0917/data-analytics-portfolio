@@ -49,7 +49,10 @@ export default function Projects() {
               <div className="h-52 overflow-hidden">
                 {project.image ? (
                   <img
-                    src={`http://localhost:5000/uploads/projects/${project.image}`}
+                
+                    
+                    src={`https://data-analytics-portfolio-g9wi.onrender.com/uploads/projects/${project.image}`}
+        
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
