@@ -15,9 +15,7 @@ app.use(express.json());
 
 app.use("/uploads", express.static("uploads"));
 
-// ========================
-// HOME ROUTE
-// ========================
+// Home Route
 app.get("/", (req, res) => {
   res.json({
     success: true,
@@ -25,9 +23,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// ========================
-// DEBUG ROUTE
-// ========================
+// Debug Route
 app.get("/api/test", (req, res) => {
   res.json({
     success: true,
@@ -35,39 +31,13 @@ app.get("/api/test", (req, res) => {
   });
 });
 
-// ========================
-// DIRECT ROUTE TESTS
-// ========================
-app.get("/api/admin", (req, res) => {
-  res.json({
-    success: true,
-    message: "Direct Admin Route Working ✅",
-  });
-});
+// ===============================
+// ORIGINAL ROUTES (RESTORED)
+// ===============================
 
-app.get("/api/project", (req, res) => {
-  res.json({
-    success: true,
-    message: "Direct Project Route Working ✅",
-  });
-});
-
-app.get("/api/message", (req, res) => {
-  res.json({
-    success: true,
-    message: "Direct Message Route Working ✅",
-  });
-});
-
-// ========================
-// ORIGINAL ROUTERS
-// ========================
-
-// COMMENT THESE OUT FOR NOW
-
-// app.use("/api/admin", adminRoutes);
-// app.use("/api/project", projectRoutes);
-// app.use("/api/message", messageRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/project", projectRoutes);
+app.use("/api/message", messageRoutes);
 
 const PORT = process.env.PORT || 5000;
 
