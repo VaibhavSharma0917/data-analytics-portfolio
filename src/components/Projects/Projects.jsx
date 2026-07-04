@@ -1,6 +1,5 @@
 import { ExternalLink, Database } from "lucide-react";
 import { useEffect, useState } from "react";
-import api from "../../lib/api";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -12,10 +11,21 @@ export default function Projects() {
 
   const fetchProjects = async () => {
     try {
-      const res = await api.get("/project");
-      setProjects(res.data.projects);
+      console.log("Calling API...");
+
+      const res = await fetch(
+        "https://data-analytics-portfolio-g9wi.onrender.com/api/project"
+      );
+
+      console.log("Status:", res.status);
+
+      const data = await res.json();
+
+      console.log("Data:", data);
+
+      setProjects(data.projects || []);
     } catch (error) {
-      console.error("Error Fetching Projects:", error);
+      console.error("FULL ERROR:", error);
     } finally {
       setLoading(false);
     }
@@ -49,10 +59,7 @@ export default function Projects() {
               <div className="h-52 overflow-hidden">
                 {project.image ? (
                   <img
-                
-                    
                     src={`https://data-analytics-portfolio-g9wi.onrender.com/uploads/projects/${project.image}`}
-        
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
@@ -73,32 +80,30 @@ export default function Projects() {
                 </p>
 
                 <div className="flex gap-4">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-xl hover:bg-slate-700 transition"
+                    >
+                      <Database size={18} />
+                      GitHub
+                    </a>
+                  )}
 
-  {project.github && (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noreferrer"
-      className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-xl hover:bg-slate-700 transition"
-    >
-      <Database size={18} />
-      GitHub
-    </a>
-  )}
-
-  {project.live_demo && (
-    <a
-      href={project.live_demo}
-      target="_blank"
-      rel="noreferrer"
-      className="flex items-center gap-2 bg-cyan-600 text-white px-4 py-2 rounded-xl hover:bg-cyan-700 transition"
-    >
-      <ExternalLink size={18} />
-      Live Demo
-    </a>
-  )}
-
-</div>
+                  {project.live_demo && (
+                    <a
+                      href={project.live_demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 bg-cyan-600 text-white px-4 py-2 rounded-xl hover:bg-cyan-700 transition"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
