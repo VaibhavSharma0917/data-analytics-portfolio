@@ -1,5 +1,6 @@
 import { ExternalLink, Database } from "lucide-react";
 import { useEffect, useState } from "react";
+import api from "../../lib/api";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -11,21 +12,10 @@ export default function Projects() {
 
   const fetchProjects = async () => {
     try {
-      console.log("Calling API...");
-
-      const res = await fetch(
-        "https://data-analytics-portfolio-g9wi.onrender.com/api/project"
-      );
-
-      console.log("Status:", res.status);
-
-      const data = await res.json();
-
-      console.log("Data:", data);
-
-      setProjects(data.projects || []);
+      const res = await api.get("/project");
+      setProjects(res.data.projects);
     } catch (error) {
-      console.error("FULL ERROR:", error);
+      console.error("Error Fetching Projects:", error);
     } finally {
       setLoading(false);
     }
@@ -59,7 +49,7 @@ export default function Projects() {
               <div className="h-52 overflow-hidden">
                 {project.image ? (
                   <img
-                    src={`https://data-analytics-portfolio-g9wi.onrender.com/uploads/projects/${project.image}`}
+                    src={`http://localhost:5000/uploads/projects/${project.image}`}
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />

@@ -10,19 +10,13 @@ dotenv.config();
 
 const app = express();
 
-/*
-app.use(
-  cors({
-    origin: "https://data-analytics-portfolio-xi.vercel.app",
-    credentials: true,
-  })
-);
-*/
-
+// Enable CORS
 app.use(cors());
 
+// Parse JSON
 app.use(express.json());
 
+// Serve uploaded files
 app.use("/uploads", express.static("uploads"));
 
 // Home Route
@@ -33,7 +27,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// Debug Route
+// API Test Route
 app.get("/api/test", (req, res) => {
   res.json({
     success: true,
@@ -41,14 +35,12 @@ app.get("/api/test", (req, res) => {
   });
 });
 
-// ===============================
-// ORIGINAL ROUTES (RESTORED)
-// ===============================
-
+// Routes
 app.use("/api/admin", adminRoutes);
 app.use("/api/project", projectRoutes);
 app.use("/api/message", messageRoutes);
 
+// Start Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
