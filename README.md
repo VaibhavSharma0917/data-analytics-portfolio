@@ -195,6 +195,6 @@ https://github.com/VaibhavSharma0917
 
 ### ⭐ If you found this project interesting, consider giving it a star.
 
-**Designed & Developed by Vaibhav Sharma**
+**Designed & Developed by Vaibhav Sharma .**
 
 </div>
