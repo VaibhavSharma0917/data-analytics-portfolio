@@ -1,16 +1,220 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<div align="center">
 
-## React Compiler
+# 📊 Data Analytics Portfolio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### A Modern Full Stack Portfolio for Showcasing Data Analytics Projects
 
-## Expanding the ESLint configuration
+<p>
+A responsive portfolio website built using <b>React</b>, <b>Node.js</b>, <b>Express.js</b>, and <b>MySQL</b>, featuring a secure admin dashboard to manage projects and portfolio content.
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-00C853?style=for-the-badge)](https://data-analytics-portfolio-alpha.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/VaibhavSharma0917/data-analytics-portfolio)
+
+</div>
+
+---
+
+# ✨ Features
+
+### 🌐 Portfolio Website
+
+- Responsive Design
+- Modern UI
+- Hero Section
+- About Section
+- Skills Showcase
+- Featured Projects
+- Resume Download
+- Contact Form
+- Dark Mode
+
+### 🔐 Admin Dashboard
+
+- JWT Authentication
+- Secure Login
+- Add Projects
+- Delete Projects
+- Upload Project Images
+- View Contact Messages
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+- Lucide React
+
+## Backend
+
+- Node.js
+- Express.js
+- JWT Authentication
+- Multer
+- CORS
+
+## Database
+
+- MySQL (Railway)
+
+## Deployment
+
+- Frontend → Vercel
+- Backend → Render
+- Database → Railway
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home
+
+![Home](screenshots/home.png)
+
+---
+
+## 👨‍💻 About
+
+![About](screenshots/about.png)
+
+---
+
+## 💻 Skills
+
+![Skills](screenshots/skills.png)
+
+---
+
+## 📩 Contact
+
+![Contact](screenshots/contact.png)
+
+---
+
+## 🔑 Admin Login
+
+![Login](screenshots/login.png)
+
+---
+
+## ⚙️ Admin Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+# 📂 Project Structure
+
+```
+Data-Analytics-Portfolio
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── lib
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── Backend
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── routes
+│   ├── uploads
+│   └── server.js
+│
+├── public
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/VaibhavSharma0917/data-analytics-portfolio.git
+```
+
+## Install Frontend
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+## Install Backend
+
+```bash
+cd Backend
+npm install
+npm start
+```
+
+---
+
+# 🔒 Authentication
+
+The Admin Dashboard is protected using JWT Authentication.
+
+Only authenticated users can:
+
+- Add Projects
+- Delete Projects
+- View Contact Messages
+
+---
+
+# 📬 Contact
+
+**Vaibhav Sharma**
+
+📧 Email
+
+17vsvaibhav@gmail.com
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/vaibhav-sharma-84352b310/
+
+💻 GitHub
+
+https://github.com/VaibhavSharma0917
+
+🌐 Portfolio
+
+https://data-analytics-portfolio-alpha.vercel.app/
+
+---
+
+# 🌟 Future Improvements
+
+- Edit Existing Projects
+- Resume Upload from Admin Panel
+- Project Categories
+- Search & Filter Projects
+- Visitor Analytics
+- Email Notifications
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, don't forget to give it a Star!
+
+Made with ❤️ by **Vaibhav Sharma**
+
+</div>
