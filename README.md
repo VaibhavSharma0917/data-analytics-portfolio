@@ -5,116 +5,147 @@
 
 # 📊 Data Analytics Portfolio
 
-### A Modern Full Stack Portfolio for Showcasing Data Analytics Projects
+### Modern Full Stack Portfolio Website for Data Analytics Professionals
 
 <p>
-A responsive portfolio website built using <b>React</b>, <b>Node.js</b>, <b>Express.js</b>, and <b>MySQL</b>, featuring a secure admin dashboard to manage projects and portfolio content.
+A fully responsive portfolio platform built with <b>React</b>, <b>Express.js</b>, <b>Node.js</b>, and <b>MySQL</b> featuring a secure Admin Dashboard for managing portfolio content, projects, and visitor messages.
 </p>
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-00C853?style=for-the-badge)](https://data-analytics-portfolio-alpha.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/VaibhavSharma0917/data-analytics-portfolio)
+<br>
+
+<a href="https://data-analytics-portfolio-alpha.vercel.app">
+<img src="https://img.shields.io/badge/🌐_Live_Portfolio-00C853?style=for-the-badge">
+</a>
+
+<a href="https://github.com/VaibhavSharma0917/data-analytics-portfolio">
+<img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github">
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
+<img src="https://img.shields.io/badge/TailwindCSS-38BDF8?style=flat-square&logo=tailwind-css&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/JWT-black?style=flat-square"/>
+<img src="https://img.shields.io/badge/Vercel-black?style=flat-square&logo=vercel"/>
+<img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square"/>
+<img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square"/>
 
 </div>
 
 ---
 
-# ✨ Features
+# ✨ About The Project
 
-### 🌐 Portfolio Website
+Unlike a traditional static portfolio, this application is built as a **complete Full Stack Portfolio Management System**.
 
-- Responsive Design
-- Modern UI
-- Hero Section
-- About Section
-- Skills Showcase
+It allows visitors to explore my profile, technical skills, projects, and resume while providing a secure admin panel that enables portfolio management without modifying the frontend source code.
+
+The project demonstrates modern full-stack development practices including authentication, REST APIs, database integration, cloud deployment, and responsive UI design.
+
+---
+
+# 📸 Project Preview
+
+> Replace these placeholders with your screenshots.
+
+| Home |
+|------|
+| ![](./screenshots/home.png) |
+
+| About | Skills |
+|--------|--------|
+| ![](./screenshots/about.png) | ![](./screenshots/skills.png) |
+
+| Contact | Login |
+|----------|-------|
+| ![](./screenshots/contact.png) | ![](./screenshots/login.png) |
+
+| Admin Dashboard |
+|----------------|
+| ![](./screenshots/dashboard.png) |
+
+---
+
+# 🚀 Highlights
+
+<table>
+
+<tr>
+
+<td width="50%">
+
+### 🌐 Portfolio Experience
+
+- Modern Landing Page
+- Responsive Layout
+- About Me Section
+- Technical Skills
 - Featured Projects
 - Resume Download
 - Contact Form
-- Dark Mode
+- Professional UI
+
+</td>
+
+<td width="50%">
 
 ### 🔐 Admin Dashboard
 
 - JWT Authentication
-- Secure Login
+- Protected Routes
 - Add Projects
 - Delete Projects
 - Upload Project Images
-- View Contact Messages
+- Manage Contact Messages
+- Secure Backend APIs
+
+</td>
+
+</tr>
+
+</table>
 
 ---
 
-# 🛠 Tech Stack
+# 🛠 Technology Stack
 
-## Frontend
-
-- React.js
-- Vite
-- Tailwind CSS
-- Axios
-- React Router
-- Lucide React
-
-## Backend
-
-- Node.js
-- Express.js
-- JWT Authentication
-- Multer
-- CORS
-
-## Database
-
-- MySQL (Railway)
-
-## Deployment
-
-- Frontend → Vercel
-- Backend → Render
-- Database → Railway
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React, Vite, Tailwind CSS, Axios, React Router |
+| Backend | Node.js, Express.js, JWT Authentication, Multer |
+| Database | MySQL (Railway) |
+| Deployment | Vercel, Render, Railway |
 
 ---
 
-# 📸 Screenshots
+# 🏗 System Architecture
 
-## 🏠 Home
-
-![Home](screenshots/home.png)
-
----
-
-## 👨‍💻 About
-
-![About](screenshots/about.png)
-
----
-
-## 💻 Skills
-
-![Skills](screenshots/skills.png)
-
----
-
-## 📩 Contact
-
-![Contact](screenshots/contact.png)
-
----
-
-## 🔑 Admin Login
-
-![Login](screenshots/login.png)
-
----
-
-## ⚙️ Admin Dashboard
-
-![Dashboard](screenshots/dashboard.png)
+```text
+                Visitor
+                   │
+                   ▼
+      React Frontend (Vercel)
+                   │
+            REST API Requests
+                   │
+                   ▼
+      Express Backend (Render)
+                   │
+           MySQL Queries
+                   │
+                   ▼
+        Railway MySQL Database
+```
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 Data-Analytics-Portfolio
 │
 ├── src
@@ -133,88 +164,37 @@ Data-Analytics-Portfolio
 │   └── server.js
 │
 ├── public
+├── screenshots
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# 📬 Connect With Me
 
-## Clone Repository
+<div align="center">
 
-```bash
-git clone https://github.com/VaibhavSharma0917/data-analytics-portfolio.git
-```
+### Vaibhav Sharma
 
-## Install Frontend
+📧 **17vsvaibhav@gmail.com**
 
-```bash
-npm install
-```
+🌐 **Portfolio**  
+https://data-analytics-portfolio-alpha.vercel.app
 
-```bash
-npm run dev
-```
+💼 **LinkedIn**  
+https://www.linkedin.com/in/vaibhav-sharma-84352b310
 
-## Install Backend
-
-```bash
-cd Backend
-npm install
-npm start
-```
-
----
-
-# 🔒 Authentication
-
-The Admin Dashboard is protected using JWT Authentication.
-
-Only authenticated users can:
-
-- Add Projects
-- Delete Projects
-- View Contact Messages
-
----
-
-# 📬 Contact
-
-**Vaibhav Sharma**
-
-📧 Email
-
-17vsvaibhav@gmail.com
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/vaibhav-sharma-84352b310/
-
-💻 GitHub
-
+💻 **GitHub**  
 https://github.com/VaibhavSharma0917
 
-🌐 Portfolio
-
-https://data-analytics-portfolio-alpha.vercel.app/
-
----
-
-# 🌟 Future Improvements
-
-- Edit Existing Projects
-- Resume Upload from Admin Panel
-- Project Categories
-- Search & Filter Projects
-- Visitor Analytics
-- Email Notifications
+</div>
 
 ---
 
 <div align="center">
 
-### ⭐ If you like this project, don't forget to give it a Star!
+### ⭐ If you found this project interesting, consider giving it a star.
 
-Made with ❤️ by **Vaibhav Sharma**
+**Designed & Developed by Vaibhav Sharma**
 
 </div>
