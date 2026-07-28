@@ -32,7 +32,7 @@ A fully responsive portfolio platform built with <b>React</b>, <b>Express.js</b>
 <img src="https://img.shields.io/badge/JWT-black?style=flat-square"/>
 <img src="https://img.shields.io/badge/Vercel-black?style=flat-square&logo=vercel"/>
 <img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square"/>
-<img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square"/>
+<img src="https://img.shields.io/badge/Aiven-0B0D0E?style=flat-square"/>
 
 </div>
 
@@ -117,8 +117,8 @@ The project demonstrates modern full-stack development practices including authe
 |-----------|--------------|
 | Frontend | React, Vite, Tailwind CSS, Axios, React Router |
 | Backend | Node.js, Express.js, JWT Authentication, Multer |
-| Database | MySQL (Railway) |
-| Deployment | Vercel, Render, Railway |
+| Database | MySQL (Aiven) |
+| Deployment | Vercel, Render, Aiven |
 
 ---
 
@@ -138,7 +138,7 @@ The project demonstrates modern full-stack development practices including authe
            MySQL Queries
                    │
                    ▼
-        Railway MySQL Database
+        Aiven MySQL Database
 ```
 
 ---
