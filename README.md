@@ -32,7 +32,7 @@ A fully responsive portfolio platform built with <b>React</b>, <b>Express.js</b>
 <img src="https://img.shields.io/badge/JWT-black?style=flat-square"/>
 <img src="https://img.shields.io/badge/Vercel-black?style=flat-square&logo=vercel"/>
 <img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square"/>
-<img src="https://img.shields.io/badge/Aiven-0B0D0E?style=flat-square"/>
+<img src="https://img.shields.io/badge/Aiven.io-0B0D0E?style=flat-square"/>
 
 </div>
 
