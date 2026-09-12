@@ -41,7 +41,7 @@ export default function Resume() {
           </p>
 
           <a
-            href="https://data-analytics-portfolio-q9wi.onrender.com/uploads/resume/1782997663816.pdf"
+            href="https://data-analytics-portfolio-q9wi.onrender.com/uploads/resume/VaibhavSharma_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="
