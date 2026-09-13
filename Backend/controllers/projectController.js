@@ -3,10 +3,7 @@ import pool from "../config/db.js";
 // Add Project
 export const addProject = async (req, res) => {
   try {
-    const { title, description, github, live_demo } = req.body;
-
-    // Image uploaded by Multer
-    const image = req.file ? req.file.filename : null;
+    const { title, description, image, github, live_demo } = req.body;
 
     const query = `
       INSERT INTO projects
